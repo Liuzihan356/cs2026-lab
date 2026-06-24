@@ -16,71 +16,73 @@
             color: #333;
             text-align: center;
         }
-        .ip-section {
-            background: white;
+        .container {
+            background-color: white;
+            padding: 30px;
             border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .ip-address {
-            font-family: monospace;
-            font-size: 1.2em;
-            color: #0066cc;
-            background: #e8f4ff;
-            padding: 10px;
-            border-radius: 4px;
-            display: inline-block;
+        .ip-section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196F3;
         }
-        .label {
+        .ip-label {
             font-weight: bold;
-            color: #555;
-            margin-bottom: 10px;
+            color: #1976D2;
+        }
+        .ip-value {
+            font-family: monospace;
+            font-size: 1.1em;
+            color: #333;
         }
         footer {
             text-align: center;
-            margin-top: 40px;
-            color: #888;
+            margin-top: 30px;
+            color: #666;
             font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <h1>IP Addresses Demonstration</h1>
-    
-    <div class="ip-section">
-        <div class="label">IPv4 Loopback Address:</div>
-        <div class="ip-address">127.0.0.1</div>
-        <p>The loopback address is used to test network software without physically connecting to a network.</p>
-    </div>
-    
-    <div class="ip-section">
-        <div class="label">IPv6 Loopback Address:</div>
-        <div class="ip-address">::1</div>
-        <p>The IPv6 loopback address, equivalent to 127.0.0.1 in IPv4.</p>
-    </div>
-    
-    <div class="ip-section">
-        <div class="label">Private IP Range (Class C):</div>
-        <div class="ip-address">192.168.0.0 - 192.168.255.255</div>
-        <p>Common private IP range used in home and small office networks.</p>
-    </div>
-    
-    <div class="ip-section">
-        <div class="label">Private IP Range (Class A):</div>
-        <div class="ip-address">10.0.0.0 - 10.255.255.255</div>
-        <p>Large private IP range often used in corporate networks.</p>
-    </div>
-    
-    <div class="ip-section">
-        <div class="label">Default Gateway Example:</div>
-        <div class="ip-address">192.168.1.1</div>
-        <p>Common default gateway address for home routers.</p>
+    <div class="container">
+        <h1>IP Addresses Demonstration</h1>
+        <p>Welcome to the CS2026 Lab IP addresses page. This page demonstrates different types of IP addresses used in networking.</p>
+        
+        <div class="ip-section">
+            <p class="ip-label">IPv4 Loopback Address:</p>
+            <p class="ip-value">127.0.0.1</p>
+        </div>
+        
+        <div class="ip-section">
+            <p class="ip-label">IPv6 Loopback Address:</p>
+            <p class="ip-value">::1</p>
+        </div>
+        
+        <div class="ip-section">
+            <p class="ip-label">Private Network (Class A):</p>
+            <p class="ip-value">10.0.0.0 - 10.255.255.255</p>
+        </div>
+        
+        <div class="ip-section">
+            <p class="ip-label">Private Network (Class B):</p>
+            <p class="ip-value">172.16.0.0 - 172.31.255.255</p>
+        </div>
+        
+        <div class="ip-section">
+            <p class="ip-label">Private Network (Class C):</p>
+            <p class="ip-value">192.168.0.0 - 192.168.255.255</p>
+        </div>
+        
+        <div class="ip-section">
+            <p class="ip-label">Default Gateway (Common):</p>
+            <p class="ip-value">192.168.1.1</p>
+        </div>
     </div>
     
     <footer>
-        <p>CS2026 Computer Networks Lab - IP Addresses Page</p>
-        <p>Created: June 24, 2026</p>
+        <p>CS2026 Computer Networks Lab | GitHub Pages Deployment</p>
     </footer>
 </body>
 </html>
