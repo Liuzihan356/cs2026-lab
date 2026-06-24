@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Addresses - CS2026 Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .ip-section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .ip-address {
+            font-family: monospace;
+            font-size: 1.2em;
+            color: #0066cc;
+            background: #e8f4ff;
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>IP Addresses Demonstration</h1>
+    
+    <div class="ip-section">
+        <div class="label">IPv4 Loopback Address:</div>
+        <div class="ip-address">127.0.0.1</div>
+        <p>The loopback address is used to test network software without physically connecting to a network.</p>
+    </div>
+    
+    <div class="ip-section">
+        <div class="label">IPv6 Loopback Address:</div>
+        <div class="ip-address">::1</div>
+        <p>The IPv6 loopback address, equivalent to 127.0.0.1 in IPv4.</p>
+    </div>
+    
+    <div class="ip-section">
+        <div class="label">Private IP Range (Class C):</div>
+        <div class="ip-address">192.168.0.0 - 192.168.255.255</div>
+        <p>Common private IP range used in home and small office networks.</p>
+    </div>
+    
+    <div class="ip-section">
+        <div class="label">Private IP Range (Class A):</div>
+        <div class="ip-address">10.0.0.0 - 10.255.255.255</div>
+        <p>Large private IP range often used in corporate networks.</p>
+    </div>
+    
+    <div class="ip-section">
+        <div class="label">Default Gateway Example:</div>
+        <div class="ip-address">192.168.1.1</div>
+        <p>Common default gateway address for home routers.</p>
+    </div>
+    
+    <footer>
+        <p>CS2026 Computer Networks Lab - IP Addresses Page</p>
+        <p>Created: June 24, 2026</p>
+    </footer>
+</body>
+</html>
